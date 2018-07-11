@@ -1,0 +1,253 @@
+<html>
+<head>
+    <title>site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!--link href="estilo.css" rel="stylesheet"-->
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+        
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            /*font-size: 0.9rem;*/
+            
+        }
+
+        .align-top {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        
+        .fixed-top {
+            position: fixed;
+            top: 0; 
+            width: 100%;
+        }
+
+        .upper-navbar {
+            background: #111;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .media {
+            text-align: center;
+            color: #fff;
+            margin: auto 1rem;
+        }
+
+        .navbar .container {
+            background: #c0392b;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1% 5%;     
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .navbar-nav { /*menu*/
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold; 
+        }
+
+        .nav-item {
+            align-self: center;
+            text-align: center;
+            padding: 0 1rem;            
+        }
+        
+        .nav-item a {
+            display: block;
+        }
+
+        .navbar-brand {
+            font-size: 3rem;
+        }
+
+        .topo {
+            background: url('gym.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: scroll;
+            padding: 30%;
+            margin-top: 6.5rem;
+        }
+        
+        .middle {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .articles {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: auto ;
+            margin: 1rem auto;
+        }
+
+        .articles .container {
+            margin: 5rem 2% 0; 
+        }
+
+        .round {
+            background: #c0392b;
+            border-radius: 50%;
+            margin: -5rem auto 2rem;
+            padding: 0.5rem;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            color : #fff;
+        }
+        
+        .inner {
+            font-size: 35px;
+        }
+        
+        .plan {
+            display: inline-block;
+            padding: 1rem;
+            background: #f1f1f1;
+            text-align: center;
+            margin: auto;
+            line-height: 2rem;  
+        }
+        
+        .plan h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .round-button {
+            width: 100%;
+            margin-top: 2rem;
+            background: #c0392b;
+            color: #fff;
+            border-radius: 10px;
+            padding: 5%;
+            text-align: center;
+
+        }
+        
+        .reset-button {
+           font: inherit;
+           overflow: inherit;
+        }
+        
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            background: #111;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .copyright {
+            text-align: center;
+            margin: auto;
+        }
+/*
+        .fixed-bottom {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+*/
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar fixed-top" id="mainNav">
+        <div class="upper-navbar fixed-top">
+            <div class="media">facebook.com/gym</div>
+            <div class="media">instagram.com/@gym</div>
+        </div>
+        <div class="container">
+            <a href="#" class="navbar-brand align-top">GYM</a>
+                <menu class="navbar-nav align-top">
+                    <menuitem class="nav-item"><a href="">HOME</a></menuitem>
+                    <menuitem class="nav-item"><a href="">ABOUT US</a></menuitem>
+                    <menuitem class="nav-item"><a href="">BLOG</a></menuitem>
+                    <menuitem class="nav-item"><a href="">GALLERY</a></menuitem>
+                </menu>
+            
+        </div>
+    </nav>
+
+    <header class="topo"></header>
+    
+    <div class="middle">CHECK OUT PRICING PLAINS</div>
+    
+    <section class="articles">    
+        <article class="container">
+            <div class="plan">
+                <div class="round">
+                    <div class="inner">$145</div>
+                </div>
+                <h1>3 Month</h1>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <button class="round-button reset-button">Sing up now</button>
+            </div>
+        </article>
+        <article class="container">
+            <div class="plan">
+                <div class="round">
+                    <div class="inner">$125</div>
+                </div>
+                <h1>2 Month</h1>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <button class="round-button reset-button">Sing up now</button>
+            </div>
+        </article>
+        <article class="container">
+            <div class="plan">
+                <div class="round">
+                    <div class="inner">$45</div>
+                </div>
+                <h1>1 Month</h1>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <p> Lorem ipsum lorem ipsum </p>
+                <button class="round-button reset-button">Sing up now</button>
+            </div>
+        </article>
+    </section>        
+    <footer class="navbar-bottom">
+       <div class="copyright">&copy Powered by</div> 
+    </footer>
+</body>
+</html>
