@@ -15,10 +15,6 @@
             
         }
 
-        .align-top {
-            padding-top: 4rem;
-        }
-        
         .fixed-top {
             position: fixed;
             top: 0; 
@@ -35,16 +31,15 @@
         .media {
             text-align: center;
             color: #fff;
-            margin: auto 1rem;
         }
 
         .navbar .container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 3rem 5rem 0.5rem;
             background: #c0392b;
             color: #fff;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 1rem 2rem;     
         }
         
         .navbar a {
@@ -60,9 +55,9 @@
         }
 
         .nav-item {
-            align-self: center;
             text-align: center;
-            padding: 0 1rem;            
+            padding: 0 1rem;     
+            align-self: flex-end;        
         }
         
         .nav-item a {
@@ -70,8 +65,16 @@
         }
 
         .navbar-brand {
+            display: flex;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
             font-size: 3rem;
-            margin: auto 1rem;
+            font-weight: bold;
+            text-align: center;
+            align-self: flex-end;  
         }
 
         .topo {
@@ -184,13 +187,15 @@
             <div class="media">instagram.com/@gym</div>
         </div>
         <div class="container">
-            <a href="#" class="navbar-brand align-top">GYM</a>
-                <menu class="navbar-nav align-top">
-                    <menuitem class="nav-item"><a href="">HOME</a></menuitem>
-                    <menuitem class="nav-item"><a href="">ABOUT US</a></menuitem>
-                    <menuitem class="nav-item"><a href="">BLOG</a></menuitem>
-                    <menuitem class="nav-item"><a href="">GALLERY</a></menuitem>
-                </menu>
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">GYM</a>
+            </div>
+            <menu class="navbar-nav">
+                <menuitem class="nav-item"><a href="">HOME</a></menuitem>
+                <menuitem class="nav-item"><a href="">ABOUT US</a></menuitem>
+                <menuitem class="nav-item"><a href="">BLOG</a></menuitem>
+                <menuitem class="nav-item"><a href="">GALLERY</a></menuitem>
+            </menu>
             
         </div>
     </nav>
