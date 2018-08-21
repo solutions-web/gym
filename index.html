@@ -6,18 +6,18 @@
     <style>
 
         @import url('https://fonts.googleapis.com/css?family=Quicksand');
-        
+
         * {
             padding: 0;
             margin: 0;
             font-family: 'Quicksand', sans-serif;
             /*font-size: 0.9rem;*/
-            
+
         }
 
         .fixed-top {
             position: fixed;
-            top: 0; 
+            top: 0;
             width: 100%;
         }
 
@@ -34,6 +34,7 @@
             margin: auto 1rem;
         }
 
+
         .navbar .container {
             display: flex;
             flex-wrap: nowrap;
@@ -42,25 +43,25 @@
             background: #c0392b;
             color: #fff;
         }
-        
+
         .navbar a {
             text-decoration: none;
             color: #fff;
         }
-        
+
         .navbar-nav { /*menu*/
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            font-weight: bold; 
+            font-weight: bold;
         }
 
         .nav-item {
             text-align: center;
-            padding: 0 0.5rem;     
-            align-self: flex-end;        
+            padding: 0 0.5rem;
+            align-self: flex-end;
         }
-        
+
         .nav-item a {
             display: block;
         }
@@ -75,17 +76,17 @@
             font-size: 3rem;
             font-weight: bold;
             text-align: center;
-            align-self: flex-end;  
+            align-self: flex-end;
         }
+
 
         .topo {
             background: url('gym.jpg') no-repeat center center;
             background-size: cover;
             background-attachment: scroll;
-            padding: 30%;
-            margin-top: 6.5rem;
+            padding-bottom: 60%;
         }
-        
+
         .middle {
             display: flex;
             justify-content: center;
@@ -106,7 +107,7 @@
         }
 
         .articles .container {
-            margin: 5rem 2% 0; 
+            margin: 5rem 2% 0;
         }
 
         .round {
@@ -121,20 +122,20 @@
             line-height: 100px;
             color : #fff;
         }
-        
+
         .inner {
             font-size: 35px;
         }
-        
+
         .plan {
             display: inline-block;
             padding: 1rem;
             background: #f1f1f1;
             text-align: center;
             margin: auto;
-            line-height: 2rem;  
+            line-height: 2rem;
         }
-        
+
         .plan h1 {
             text-align: center;
             margin-bottom: 1rem;
@@ -151,12 +152,12 @@
             text-align: center;
 
         }
-        
+
         .reset-button {
            font: inherit;
            overflow: inherit;
         }
-        
+
         .navbar-bottom {
             display: flex;
             justify-content: center;
@@ -169,19 +170,21 @@
             text-align: center;
             margin: auto;
         }
-/*
-        .fixed-bottom {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            left: 0;
-        }
-*/
+
+				@media (max-width: 500px) {
+		        .topo {
+	            background: url('gym.jpg') no-repeat top center;
+	            background-size: 225%, 225%;
+	            background-attachment: scroll;
+	            padding: 60%;
+	        }
+
+				}
 
     </style>
 </head>
 <body>
-    
+
     <nav class="navbar fixed-top" id="mainNav">
         <div class="upper-navbar fixed-top">
             <div class="media">facebook.com/gym</div>
@@ -197,15 +200,15 @@
                 <menuitem class="nav-item"><a href="">BLOG</a></menuitem>
                 <menuitem class="nav-item"><a href="">GALLERY</a></menuitem>
             </menu>
-            
+
         </div>
     </nav>
 
     <header class="topo"></header>
-    
+
     <div class="middle">CHECK OUT PRICING PLAINS</div>
-    
-    <section class="articles">    
+
+    <section class="articles">
         <article class="container">
             <div class="plan">
                 <div class="round">
@@ -251,9 +254,9 @@
                 <button class="round-button reset-button">Sing up now</button>
             </div>
         </article>
-    </section>        
+    </section>
     <footer class="navbar-bottom">
-       <div class="copyright">&copy Powered by</div> 
+       <div class="copyright">&copy Powered by</div>
     </footer>
 </body>
 </html>
