@@ -23,17 +23,20 @@
 
         .upper-navbar {
             background: #111;
-            padding: 0.5rem;
             display: flex;
-            justify-content:    center;
+            justify-content: space-around;
         }
+
+				.media-container {
+					 display: flex;
+					 justify-content: space-around;
+				}
 
         .media {
             text-align: center;
-            color: #fff;
-            margin: auto 1rem;
+						color: #fff;
+						padding: 0.5rem;
         }
-
 
         .navbar .container {
             display: flex;
@@ -176,18 +179,19 @@
 			background: url('gym.jpg') no-repeat top center;
 			background-size: 225%, 225%;
 			background-attachment: scroll;
-			padding-top: 60%;
+			padding-top: 50%;
 		}
 	}
 
     </style>
 </head>
 <body>
-
     <nav class="navbar fixed-top" id="mainNav">
         <div class="upper-navbar fixed-top">
-            <div class="media">facebook.com/gym</div>
-            <div class="media">instagram.com/@gym</div>
+						<div class="media-container">
+								<div class="media">facebook.com/gym</div>
+            		<div class="media">instagram.com/@gym</div>
+						</div>
         </div>
         <div class="container">
             <div class="navbar-brand">
