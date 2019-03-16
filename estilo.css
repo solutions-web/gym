@@ -190,15 +190,15 @@
 @media (max-width: 500px) {
   .topo {
     background: url('gym.jpg') no-repeat top center;
-    background-size: 200%;
+    background-size: cover;
     background-position: 45%;
     background-attachment: scroll;
     margin-top: 0px;
   }
   .topo .content {
-    color: #ccc;
+    
     font-size: 1rem;
-    padding-top:18rem;
+    padding-top:15rem;
     padding-left:2rem;
   }
 
