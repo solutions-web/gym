@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Raleway', sans-serif;
   /*font-size: 0.9rem;*/
 
 }
@@ -190,13 +190,16 @@
 @media (max-width: 500px) {
   .topo {
     background: url('gym.jpg') no-repeat top center;
-    background-size: 225%, 225%;
+    background-size: 200%;
+    background-position: 45%;
     background-attachment: scroll;
-    padding-top: 50%;
+    margin-top: 0px;
   }
   .topo .content {
-    padding: 0;
-    font-size: 1.5rem;
+    color: #ccc;
+    font-size: 1rem;
+    padding-top:18rem;
+    padding-left:2rem;
   }
 
   .navbar-nav {
