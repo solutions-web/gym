@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  /*font-size: 0.9rem;*/
-
 }
 
 .fixed-top {
@@ -34,13 +34,12 @@
 .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
 
 .navbar .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 3rem 2rem 0.5rem;
   background: #c0392b;
   color: #fff;
@@ -59,7 +58,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-weight: bold;
+  font-weight: 400;
+  padding-bottom: 1rem;
 }
 
 .nav-item {
@@ -98,7 +98,7 @@
 }
 
 .topo .content {
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-left: 3rem;
 
 }
@@ -112,18 +112,20 @@
   font-size: 200%;
   font-weight: bold;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 
 }
 
-.articles {
+.plains {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: auto ;
   margin: 1rem auto;
+  font-family: 'Roboto', sans-serif !important;
 }
 
-.articles .container {
+.plains .container {
   margin: 5rem 2% 0;
 }
 
@@ -196,7 +198,7 @@
     margin-top: 0px;
   }
   .topo .content {
-    
+
     font-size: 1rem;
     padding-top:15rem;
     padding-left:2rem;
