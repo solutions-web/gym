@@ -121,7 +121,7 @@
 
 .aboutus .container {
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 8rem 0;
   align-items: center;
 }
 
@@ -224,7 +224,52 @@
   margin: auto;
 }
 
+.dropdown {
+  display: none;
+}
+
 @media (max-width: 500px) {
+
+  .dropdown {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    font-family: sans-serif;
+    display: block;
+  }
+
+  .content{
+    display: none;
+    margin-top: 4rem;
+    background-color: #222;
+  }
+
+  .content a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+  }
+
+  .show {
+    display: block;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    color: #ddd;
+    float: right;
+  }
+
+/****************/
+
   .topo {
     background: url('gym.jpg') no-repeat top center;
     background-size: cover;

@@ -21,6 +21,20 @@
         </div>
       </div>
     </nav>
+
+
+    <div class="dropdown">
+      <button class="btn" id="myBtn">Menu</button>
+      <nav class="content" id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Facebook</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+
+
     <nav class="navbar " id="mainNav">
       <div class="container">
         <div class="navbar-brand">
@@ -53,7 +67,7 @@
       <div class="aboutus-item">
         <p class="lead">HERE WE TAKE YOUR TRAINNING SERIOUS, Lorem ipsum dolor sit amet,
           consectetur adipiscing elit. Maecenas convallis at neque non placerat. Duis tempus orci quis scelerisque
-          interdum. Pellentesque suscipit viverra eros, tempor tristique lacus pellentesque et. 
+          interdum. Pellentesque suscipit viverra eros, tempor tristique lacus pellentesque et.
         </p>
       </div>
     </div>
@@ -131,5 +145,11 @@
     <footer class="navbar-bottom">
       <div class="copyright">&copy Powered by</div>
     </footer>
+
+    <script>
+      document.getElementById("myBtn").onclick = function() {
+        document.getElementById("menu").classList.toggle("show");
+      };
+    </script>
   </body>
   </html>
