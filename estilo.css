@@ -12,53 +12,50 @@
   margin: 0;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
 }
 
 .fixed-top {
   position: fixed;
-  top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+
 }
 
 .upper-navbar {
   background: #111;
+  color: #eee;
+  padding: 0.5rem;
 }
 
-
-.media {
-  display: flex;
-  justify-content: center;
+.upper-navbar .container {
+  justify-content: flex-end;
   align-items: baseline;
-  text-align: center;
-  padding: 0.3rem;
 }
 
 .media-item {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1rem;
-  color: #eee;
-  align-items: baseline;
+  padding: 0 1rem;
 }
 
 .media-item i {
   font-size: 1.5rem;
 }
-.media-item span {
-  margin-left: 0.3rem;
 
+.media-item a {
+  padding-left: 0.5rem;
+  color: #eee;
+  text-decoration: none;
 }
 
-.container {
-  display: flex;
-  flex-wrap: nowrap;
-}
 
 .navbar .container {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 3rem 2rem 0.5rem;
+  padding: 1rem 0;
   background: #c0392b;
   color: #fff;
 }
@@ -77,7 +74,9 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   font-weight: 400;
-  padding-bottom: 1rem;
+  align-self: center;
+  /* padding-bottom: 1rem; */
+  padding-right: 1rem;
 }
 
 .nav-item {
@@ -91,8 +90,7 @@
 }
 
 .navbar-brand {
-  display: flex;
-  text-align: center;
+  padding: 0 3rem;
 }
 
 .logo {
@@ -121,7 +119,26 @@
 
 }
 
+.aboutus .container {
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+}
 
+.aboutus-item {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.aboutus-item h1 {
+  font-size: 2rem;
+}
+
+.aboutus-item p {
+  font-size: 1.5rem;
+}
+
+/*************************/
 .middle {
   display: flex;
   justify-content: center;
@@ -135,17 +152,17 @@
 }
 
 .plans {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding-top:4rem;
-  margin: 1rem auto;
   font-family: 'Roboto', sans-serif !important;
 }
 
 .plans .container {
-  margin: 5rem 2% 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem 0 2rem;
 }
+
+.plan {}
 
 .round {
   background: #c0392b;
@@ -230,8 +247,8 @@
     text-align: center;
   }
 
-  .media {
-    /* display: none; */
+  .upper-navbar {
+    display: none;
     padding: 0;
   }
 }
