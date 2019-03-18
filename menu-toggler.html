@@ -4,16 +4,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-  .dropdown {
-    display: inline-block;
+  * {
+    margin: 0;
+    padding: 0;
   }
+
+  .dropdown {
+    background-color: #222;
+    font-family: sans-serif;
+  }
+
 
   .content{
     display: none;
+    transition: transform 1s ease;
   }
 
   .content a {
     display: block;
+    text-decoration: none;
+    color: #ddd;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .show {
@@ -22,8 +35,12 @@
 
   .btn {
     padding: 1rem 2rem;
+    background: none;
+    border: none;
+    color: #ddd;
+
   }
-  
+
 </style>
 </head>
 <body>
@@ -34,7 +51,7 @@
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Facebook</a>
-    <a href="#">Contatc</a>
+    <a href="#">Contact</a>
   </nav>
 </div>
 <script>

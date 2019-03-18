@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@font-face {
+    font-family: 'Raleway-Light', sans-serif;
+    src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,19 +22,25 @@
 
 .upper-navbar {
   background: #111;
-  display: flex;
-  justify-content: space-around;
 }
 
-.media-container {
-  display: flex;
-  justify-content: space-around;
-}
 
 .media {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  color: #fff;
   padding: 0.5rem;
+}
+
+.media-item {
+  display: flex;
+  justify-content: evenly;
+  margin-left: 1rem;
+  color: #eee;
+}
+.media-item span {
+  margin-left: 0.3rem;
+  margin-top: -0.1rem;
 }
 
 .container {
@@ -211,5 +222,10 @@
 
   .navbar {
     text-align: center;
+  }
+
+  .media {
+    /* display: none; */
+    padding: 0;
   }
 }
