@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: 'Raleway-Light', sans-serif;
+    src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+  list-style-type: none;
+
+}
+
+.container {
+  display: flex;
+}
+
+.fixed-top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+}
+
+.upper-navbar {
+  background: #111;
+  color: #eee;
+  padding: 0.5rem;
+}
+
+.upper-navbar .container {
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.media-item {
+  padding: 0 1rem;
+}
+
+.media-item i {
+  font-size: 1.5rem;
+}
+
+.media-item a {
+  padding-left: 0.5rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+
+.navbar .container {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background: #c0392b;
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #222;
+}
+
+.navbar-nav { /*menu*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-weight: 400;
+  align-self: center;
+  /* padding-bottom: 1rem; */
+  padding-right: 1rem;
+}
+
+.nav-item {
+  text-align: center;
+  padding: 0 0.5rem;
+  align-self: flex-end;
+}
+
+.nav-item a {
+  display: block;
+}
+
+.navbar-brand {
+  padding: 0 3rem;
+}
+
+.logo {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  align-self: flex-end;
+}
+
+
+.topo {
+  background: url('gym.jpg') no-repeat top center;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 15rem;
+  padding-left: 3rem;
+
+}
+
+.aboutus .container {
+  flex-direction: column;
+  padding: 8rem 0;
+  align-items: center;
+}
+
+.aboutus-item {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.aboutus-item h1 {
+  font-size: 2rem;
+}
+
+.aboutus-item p {
+  font-size: 1.5rem;
+}
+
+/*************************/
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 10%;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.plans {
+  padding-top:4rem;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.plans .container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem 0 2rem;
+}
+
+.plan {}
+
+.round {
+  background: #c0392b;
+  border-radius: 50%;
+  margin: -5rem auto 2rem;
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  color : #fff;
+}
+
+.inner {
+  font-size: 35px;
+}
+
+.plan {
+  display: inline-block;
+  padding: 1rem;
+  background: #f1f1f1;
+  text-align: center;
+  margin: auto;
+  line-height: 2rem;
+}
+
+.plan h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.round-button {
+  width: 100%;
+  margin-top: 2rem;
+  background: #c0392b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+}
+
+.reset-button {
+  font: inherit;
+  overflow: inherit;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .collapse {
+    display: none;
+    flex-direction: column;
+  }
+
+  .collapse a {
+    display: inline-block;
+    z-index: 9999;
+    padding: 1rem 2rem;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .btn {
+    display: block;
+    padding: 1rem 4rem;
+    background: none;
+    border: none;
+    color: #eee;
+  }
+
+
+  .topo {
+    background: url('gym.jpg') no-repeat top center;
+    background-size: cover;
+    background-position: 45%;
+    background-attachment: scroll;
+    margin-top: 0px;
+    font-size: 1rem;
+    padding-top:15rem;
+    padding-left:2rem;
+  }
+
+  .upper-navbar {
+    display: none;
+    padding: 0;
+  }
+
+  .plans .container {
+    justify-content: space-around;
+  }
+
+  .plan {
+    margin-top: 8rem;
+
+  }
+}
